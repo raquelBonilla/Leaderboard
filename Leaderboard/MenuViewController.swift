@@ -18,10 +18,6 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         self.setupViews()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 
     func setupViews() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
