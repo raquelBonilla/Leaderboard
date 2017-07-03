@@ -18,6 +18,19 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         self.setupViews()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let user = AuthService.currentUser() {
+            
+        } else {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let signInVC = sb.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+            let navVC = UINavigationController(rootViewController: signInVC)
+            self.present(navVC, animated: true, completion: nil)
+        }
+    }
 
     func setupViews() {
         let sb = UIStoryboard(name: "Main", bundle: nil)

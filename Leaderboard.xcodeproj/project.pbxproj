@@ -19,6 +19,8 @@
 		DB7243351F09D2CB00BBF3BA /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */; };
 		DB7243371F09D70300BBF3BA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243361F09D70300BBF3BA /* SignInViewController.swift */; };
 		DB7243391F09D95E00BBF3BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */; };
+		DB72433E1F09DF6A00BBF3BA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72433D1F09DF6A00BBF3BA /* AuthService.swift */; };
+		DB7243401F09E43100BBF3BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72433F1F09E43100BBF3BA /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		DB7243361F09D70300BBF3BA /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB72433D1F09DF6A00BBF3BA /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DB72433F1F09E43100BBF3BA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ED84A45100FC8E977D1EF722 /* Pods-Leaderboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.debug.xcconfig"; sourceTree = "<group>"; };
 		F70E0E57F4270F38AACA800C /* Pods-Leaderboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,20 +94,46 @@
 		DB7243151F084F2900BBF3BA /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
-				DB7243161F084F2900BBF3BA /* AppDelegate.swift */,
-				DB7243361F09D70300BBF3BA /* SignInViewController.swift */,
-				DB7243181F084F2900BBF3BA /* MenuViewController.swift */,
-				DB72432A1F0850E000BBF3BA /* LeaderboardViewController.swift */,
-				DB7243321F09659300BBF3BA /* PlayerScoreTableViewCell.swift */,
-				DB72432E1F08577B00BBF3BA /* ProfileViewController.swift */,
-				DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */,
-				DB72431A1F084F2900BBF3BA /* Main.storyboard */,
+				DB72433C1F09DF2F00BBF3BA /* App */,
+				DB72433A1F09DEEC00BBF3BA /* Services */,
 				DB7243221F084F2900BBF3BA /* Info.plist */,
 				DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */,
 				DB72431D1F084F2900BBF3BA /* Assets.xcassets */,
 				DB72431F1F084F2900BBF3BA /* LaunchScreen.storyboard */,
 			);
 			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		DB72433A1F09DEEC00BBF3BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB72433B1F09DF0D00BBF3BA /* Auth */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DB72433B1F09DF0D00BBF3BA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DB72433D1F09DF6A00BBF3BA /* AuthService.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		DB72433C1F09DF2F00BBF3BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DB7243161F084F2900BBF3BA /* AppDelegate.swift */,
+				DB7243361F09D70300BBF3BA /* SignInViewController.swift */,
+				DB72433F1F09E43100BBF3BA /* SignUpViewController.swift */,
+				DB7243181F084F2900BBF3BA /* MenuViewController.swift */,
+				DB72432A1F0850E000BBF3BA /* LeaderboardViewController.swift */,
+				DB7243321F09659300BBF3BA /* PlayerScoreTableViewCell.swift */,
+				DB72432E1F08577B00BBF3BA /* ProfileViewController.swift */,
+				DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */,
+				DB72431A1F084F2900BBF3BA /* Main.storyboard */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +265,8 @@
 				DB72432C1F0850E000BBF3BA /* LeaderboardViewController.swift in Sources */,
 				DB7243331F09659300BBF3BA /* PlayerScoreTableViewCell.swift in Sources */,
 				DB7243301F08577B00BBF3BA /* ProfileViewController.swift in Sources */,
+				DB72433E1F09DF6A00BBF3BA /* AuthService.swift in Sources */,
+				DB7243401F09E43100BBF3BA /* SignUpViewController.swift in Sources */,
 				DB7243171F084F2900BBF3BA /* AppDelegate.swift in Sources */,
 				DB7243351F09D2CB00BBF3BA /* EntryViewController.swift in Sources */,
 			);
@@ -402,6 +434,7 @@
 				DB7243271F084F2900BBF3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

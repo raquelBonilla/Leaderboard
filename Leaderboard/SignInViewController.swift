@@ -9,6 +9,7 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
@@ -16,6 +17,26 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func signInPressed(_ sender: Any) {
+        if let email = userNameTextField.text, let password = passwordTextField.text {
+            if email.characters.count > 0 && password.characters.count > 0 {
+                self.signIn(email: email, password: password)
+            }
+        }
+    }
+    
+    func signIn(email: String!, password: String!) {
+        AuthService.signInUser(email: email, password: password, completion: { (user, error) in
+            if error != nil {
+                debugPrint(error.debugDescription)
+            } else if let user = user {
+                print(user.description)
+                self.navigationController?.dismiss(animated: true, completion: nil)
+            }
+        })
     }
 
 
