@@ -20,6 +20,10 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         leaderboardTableView.dataSource = self
         leaderboardTableView.delegate = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

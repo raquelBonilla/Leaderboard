@@ -12,18 +12,19 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func signUpPressed(_ sender: Any) {
-        if let email = userNameTextField.text, let password = passwordTextField.text {
-            if email.characters.count > 0 && password.characters.count > 0 {
+        if let email = userNameTextField.text, let password = passwordTextField.text,
+            let confirmPass = confirmPasswordTextField.text {
+            if email.characters.count > 0 && password.characters.count > 0 && password.compare(confirmPass) == .orderedSame {
                 self.signUp(email: email, password: password)
+            } else {
+                self.showSignUpErrorAlert()
             }
         }
     }
@@ -37,6 +38,13 @@ class SignUpViewController: UIViewController {
                 self.navigationController?.dismiss(animated: true, completion: nil)
             }
         })
+    }
+    
+    func showSignUpErrorAlert() {
+        let alert = UIAlertController(title: "Invalid Email/Password", message: "Make sure email is valid and passwords match", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
     }
 
     /*

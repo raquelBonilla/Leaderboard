@@ -25,6 +25,8 @@ class SignInViewController: UIViewController {
             if email.characters.count > 0 && password.characters.count > 0 {
                 self.signIn(email: email, password: password)
             }
+        } else {
+            self.showSignInErrorAlert()
         }
     }
     
@@ -32,13 +34,20 @@ class SignInViewController: UIViewController {
         AuthService.signInUser(email: email, password: password, completion: { (user, error) in
             if error != nil {
                 debugPrint(error.debugDescription)
+                self.showSignInErrorAlert()
             } else if let user = user {
                 print(user.description)
                 self.navigationController?.dismiss(animated: true, completion: nil)
             }
         })
     }
-
+    
+    func showSignInErrorAlert() {
+        let alert = UIAlertController(title: "Invalid Email/Password", message: "Access denied", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

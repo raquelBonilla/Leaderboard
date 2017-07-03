@@ -19,6 +19,16 @@ class AuthService {
         Auth.auth().createUser(withEmail: email, password: password, completion: completion)
     }
     
+    class func signOutUser() -> Bool {
+        do {
+            try Auth.auth().signOut()
+            return true
+        } catch let signOutError as NSError {
+            debugPrint("Error on signOut: %@", signOutError)
+            return false
+        }
+    }
+    
     class func currentUser() -> User? {
         return Auth.auth().currentUser
     }

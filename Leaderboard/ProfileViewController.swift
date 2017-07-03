@@ -14,6 +14,15 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func signOutPressed(_ sender: Any) {
+        if (AuthService.signOutUser()) {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let signInVC = sb.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+            let navVC = UINavigationController(rootViewController: signInVC)
+            self.parent?.present(navVC, animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
