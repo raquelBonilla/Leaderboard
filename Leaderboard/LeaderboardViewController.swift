@@ -36,6 +36,12 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
+    @IBAction func addEntry(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let entryVC = sb.instantiateViewController(withIdentifier: "EntryViewController") as! EntryViewController
+        let navVC = UINavigationController(rootViewController: entryVC)
+        self.present(navVC, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

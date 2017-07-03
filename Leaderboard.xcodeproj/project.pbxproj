@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6CB3AFA84935D59CB793040 /* Pods_Leaderboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762564E925471A0F98DE6CA4 /* Pods_Leaderboard.framework */; };
 		DB7243171F084F2900BBF3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243161F084F2900BBF3BA /* AppDelegate.swift */; };
 		DB7243191F084F2900BBF3BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243181F084F2900BBF3BA /* MenuViewController.swift */; };
 		DB72431C1F084F2900BBF3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB72431A1F084F2900BBF3BA /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		DB72432C1F0850E000BBF3BA /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72432A1F0850E000BBF3BA /* LeaderboardViewController.swift */; };
 		DB7243301F08577B00BBF3BA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72432E1F08577B00BBF3BA /* ProfileViewController.swift */; };
 		DB7243331F09659300BBF3BA /* PlayerScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243321F09659300BBF3BA /* PlayerScoreTableViewCell.swift */; };
+		DB7243351F09D2CB00BBF3BA /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */; };
+		DB7243371F09D70300BBF3BA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243361F09D70300BBF3BA /* SignInViewController.swift */; };
+		DB7243391F09D95E00BBF3BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		762564E925471A0F98DE6CA4 /* Pods_Leaderboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leaderboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7243131F084F2900BBF3BA /* Leaderboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7243161F084F2900BBF3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB7243181F084F2900BBF3BA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,11 @@
 		DB72432A1F0850E000BBF3BA /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		DB72432E1F08577B00BBF3BA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DB7243321F09659300BBF3BA /* PlayerScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerScoreTableViewCell.swift; sourceTree = "<group>"; };
+		DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		DB7243361F09D70300BBF3BA /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED84A45100FC8E977D1EF722 /* Pods-Leaderboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.debug.xcconfig"; sourceTree = "<group>"; };
+		F70E0E57F4270F38AACA800C /* Pods-Leaderboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CB3AFA84935D59CB793040 /* Pods_Leaderboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD146153B0D4CF3334F125E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				762564E925471A0F98DE6CA4 /* Pods_Leaderboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0C15D36D00440C3907B99AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED84A45100FC8E977D1EF722 /* Pods-Leaderboard.debug.xcconfig */,
+				F70E0E57F4270F38AACA800C /* Pods-Leaderboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB72430A1F084F2900BBF3BA = {
 			isa = PBXGroup;
 			children = (
 				DB7243151F084F2900BBF3BA /* Leaderboard */,
 				DB7243141F084F2900BBF3BA /* Products */,
+				D0C15D36D00440C3907B99AE /* Pods */,
+				AD146153B0D4CF3334F125E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +91,15 @@
 			isa = PBXGroup;
 			children = (
 				DB7243161F084F2900BBF3BA /* AppDelegate.swift */,
+				DB7243361F09D70300BBF3BA /* SignInViewController.swift */,
 				DB7243181F084F2900BBF3BA /* MenuViewController.swift */,
 				DB72432A1F0850E000BBF3BA /* LeaderboardViewController.swift */,
 				DB7243321F09659300BBF3BA /* PlayerScoreTableViewCell.swift */,
 				DB72432E1F08577B00BBF3BA /* ProfileViewController.swift */,
+				DB7243341F09D2CB00BBF3BA /* EntryViewController.swift */,
 				DB72431A1F084F2900BBF3BA /* Main.storyboard */,
 				DB7243221F084F2900BBF3BA /* Info.plist */,
+				DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */,
 				DB72431D1F084F2900BBF3BA /* Assets.xcassets */,
 				DB72431F1F084F2900BBF3BA /* LaunchScreen.storyboard */,
 			);
@@ -80,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB7243251F084F2900BBF3BA /* Build configuration list for PBXNativeTarget "Leaderboard" */;
 			buildPhases = (
+				CB9B68C32DF39E751E7E00AB /* [CP] Check Pods Manifest.lock */,
 				DB72430F1F084F2900BBF3BA /* Sources */,
 				DB7243101F084F2900BBF3BA /* Frameworks */,
 				DB7243111F084F2900BBF3BA /* Resources */,
+				8052B6FB5EDFF83BC02BAE09 /* [CP] Embed Pods Frameworks */,
+				98179D201EE8D5F732ACE7ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB7243211F084F2900BBF3BA /* LaunchScreen.storyboard in Resources */,
+				DB7243391F09D95E00BBF3BA /* GoogleService-Info.plist in Resources */,
 				DB72431E1F084F2900BBF3BA /* Assets.xcassets in Resources */,
 				DB72431C1F084F2900BBF3BA /* Main.storyboard in Resources */,
 			);
@@ -140,16 +177,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8052B6FB5EDFF83BC02BAE09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98179D201EE8D5F732ACE7ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9B68C32DF39E751E7E00AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB72430F1F084F2900BBF3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7243371F09D70300BBF3BA /* SignInViewController.swift in Sources */,
 				DB7243191F084F2900BBF3BA /* MenuViewController.swift in Sources */,
 				DB72432C1F0850E000BBF3BA /* LeaderboardViewController.swift in Sources */,
 				DB7243331F09659300BBF3BA /* PlayerScoreTableViewCell.swift in Sources */,
 				DB7243301F08577B00BBF3BA /* ProfileViewController.swift in Sources */,
 				DB7243171F084F2900BBF3BA /* AppDelegate.swift in Sources */,
+				DB7243351F09D2CB00BBF3BA /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,7 @@
 		};
 		DB7243261F084F2900BBF3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED84A45100FC8E977D1EF722 /* Pods-Leaderboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Leaderboard/Info.plist;
@@ -284,6 +372,7 @@
 		};
 		DB7243271F084F2900BBF3BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70E0E57F4270F38AACA800C /* Pods-Leaderboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Leaderboard/Info.plist;
