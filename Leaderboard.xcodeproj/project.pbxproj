@@ -21,6 +21,7 @@
 		DB7243391F09D95E00BBF3BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */; };
 		DB72433E1F09DF6A00BBF3BA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72433D1F09DF6A00BBF3BA /* AuthService.swift */; };
 		DB7243401F09E43100BBF3BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72433F1F09E43100BBF3BA /* SignUpViewController.swift */; };
+		DB7243421F0ABA4D00BBF3BA /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7243411F0ABA4D00BBF3BA /* DBService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DB7243381F09D95E00BBF3BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB72433D1F09DF6A00BBF3BA /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DB72433F1F09E43100BBF3BA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DB7243411F0ABA4D00BBF3BA /* DBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		ED84A45100FC8E977D1EF722 /* Pods-Leaderboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.debug.xcconfig"; sourceTree = "<group>"; };
 		F70E0E57F4270F38AACA800C /* Pods-Leaderboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leaderboard/Pods-Leaderboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				DB72433D1F09DF6A00BBF3BA /* AuthService.swift */,
+				DB7243411F0ABA4D00BBF3BA /* DBService.swift */,
 			);
 			name = Auth;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB7243371F09D70300BBF3BA /* SignInViewController.swift in Sources */,
+				DB7243421F0ABA4D00BBF3BA /* DBService.swift in Sources */,
 				DB7243191F084F2900BBF3BA /* MenuViewController.swift in Sources */,
 				DB72432C1F0850E000BBF3BA /* LeaderboardViewController.swift in Sources */,
 				DB7243331F09659300BBF3BA /* PlayerScoreTableViewCell.swift in Sources */,

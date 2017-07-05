@@ -8,5 +8,6 @@ target 'Leaderboard' do
   # Pods for Leaderboard
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

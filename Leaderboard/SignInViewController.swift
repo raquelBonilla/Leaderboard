@@ -24,9 +24,9 @@ class SignInViewController: UIViewController {
         if let email = userNameTextField.text, let password = passwordTextField.text {
             if email.characters.count > 0 && password.characters.count > 0 {
                 self.signIn(email: email, password: password)
+            } else {
+                self.showSignInErrorAlert()
             }
-        } else {
-            self.showSignInErrorAlert()
         }
     }
     
